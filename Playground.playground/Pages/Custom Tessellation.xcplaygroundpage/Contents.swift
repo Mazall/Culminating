@@ -29,46 +29,12 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 PlaygroundPage.current.liveView = canvas
 
 /*:
- ## Tortoise class
- 
- To use the Tortoise abstraction, just create an instance of the Tortoise class, and provide it with a canvas object that is should draw upon.
- */
+## Tortoise class
+
+To use the Tortoise abstraction, just create an instance of the Tortoise class, and provide it with a canvas object that is should draw upon.
+*/
 
 // Create a turtle that will draw upon the canvas
 let t = Tortoise(drawingUpon: canvas)
 
-func drawArrow() {
-//    t.drawSelf()
-
-    t.penDown()
-    t.forward(steps: 100)
-    t.left(by: 90)
-    t.forward(steps: 40)
-    t.right(by: 120)
-    t.forward(steps: 125)
-    t.right(by: 120)
-    t.forward(steps: 125)
-    t.right(by: 120)
-    t.forward(steps: 40)
-    t.left(by: 90)
-    t.forward(steps: 100)
-    t.right(by: 90)
-    t.forward(steps: 45)
-    t.right(by: 90)
-    
-//    t.drawSelf()
-}
-
-t.penUp()
-t.forward(steps: 200)
-t.left(by: 90)
-t.forward(steps: 300)
-t.right(by: 90)
-
-drawArrow()
-
-t.penUp()
-t.forward(steps: 209)
-
-drawArrow()
-
+t.
