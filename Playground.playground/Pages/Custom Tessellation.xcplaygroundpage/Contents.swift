@@ -37,4 +37,89 @@ To use the Tortoise abstraction, just create an instance of the Tortoise class, 
 // Create a turtle that will draw upon the canvas
 let t = Tortoise(drawingUpon: canvas)
 
-t.
+func findHypotenuse(a: Int, b: Int ) -> Int {
+    return Int(sqrt(Double(a*a + b*b)))
+}
+
+t.penUp()
+t.forward(steps: 150)
+t.left(by: 90)
+t.forward(steps: 300)
+t.right(by: 90)
+t.penDown()
+t.forward(steps: 100)
+t.left(by: 90)
+t.forward(steps: 100)
+t.right(by: 45)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.right(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50)+30)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50)+30)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.left(by: 45)
+t.forward(steps: 100)
+t.right(by: 90)
+t.forward(steps: 100)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.right(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50+36))
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50+36))
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.right(by: 135)
+t.forward(steps: 100)
+t.left(by: 90)
+t.forward(steps: 100)
+t.right(by: 45)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.right(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50)+30)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50)+30)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.left(by: 45)
+t.forward(steps: 100)
+t.right(by: 90)
+t.forward(steps: 100)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.right(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50)+29)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50)+29)
+t.left(by: 135)
+t.forward(steps: findHypotenuse(a: 50, b: 50))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+t.drawSelf()

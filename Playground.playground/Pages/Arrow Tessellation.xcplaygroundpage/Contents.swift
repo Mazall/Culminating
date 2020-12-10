@@ -28,6 +28,8 @@ let canvas = Canvas(width: preferredWidth, height: preferredHeight)
 // Show the canvas in the playground's live view
 PlaygroundPage.current.liveView = canvas
 
+
+canvas.highPerformance = true
 /*:
  ## Tortoise class
  
@@ -58,17 +60,33 @@ func drawArrow() {
     
 //    t.drawSelf()
 }
+// remove this section
+// t.setY(to: 300)
+// remove above this section
+
+for _ in 0...5 {
+drawArrow()
 
 t.penUp()
-t.forward(steps: 200)
-t.left(by: 90)
-t.forward(steps: 300)
+t.forward(steps: 209 )
+
+drawArrow()
+
+t.penUp()
+t.forward(steps: 209 )
+
+drawArrow()
+
+t.penUp()
+t.left(by: 180)
+t.forward(steps: 418)
 t.right(by: 90)
+t.forward(steps: 125)
+t.right(by: 90)
+}
 
-drawArrow()
 
+canvas.highPerformance = false
 t.penUp()
-t.forward(steps: 209)
-
-drawArrow()
-
+t.forward(steps: 1)
+t.copySVGToClipboard()
